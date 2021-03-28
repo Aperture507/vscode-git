@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <mata charset="utp-8">
+        <title>연습용</title>
+        <style>
+            h1 {
+                text-align: center;
+                font-size: 50px;
+                border-bottom: 2px solid gray;
+                margin: 0px;
+            }
+            #grid {
+                display:grid;
+                grid-template-columns: 150px 1fr;
+            }
+            #grid ol{
+                margin: 0px;
+                border-right: 2px solid gray ;
+                width: 100px;
+             }
+        </style>
+    </head>
+    <body>
+        <h1>WEB</h1>
+        <input id="night_day" type="button" value="nigth" onclick="
+            if(document.querySelector('#night_day').value === 'night') {
+                document.querySelector('body').style.backgroundColor ='black';
+                document.querySelector('body').style.color ='white';
+                document.querySelector('#night_day').value='day'
+            }
+            else {
+                document.querySelector('body').style.backgroundColor ='white';
+                document.querySelector('body').style.color ='black';
+                document.querySelector('#night_day').value='night'
+            }
+        
+        ">
+        <div id="grid">
+            <ol>
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+            </ol>
+        
+            <div id="article">
+                <p>Web browsers receive HTML documents from a web server or from local storage and render the documents 
+                    into multimedia web pages. HTML describes the structure of a web page semantically and originally 
+                    included cues for the appearance of the document.
+
+                    HTML elements are the building blocks of HTML pages. 
+                    With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page.
+                    HTML provides a means to create structured documents by denoting structural semantics for text such as headings,
+                    paragraphs, lists, links, quotes and other items. 
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
