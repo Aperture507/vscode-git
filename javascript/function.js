@@ -79,7 +79,7 @@ printAgain();
 //callback
 
 function quiz(answer, printYes, printNo){
-    if(answer === 'I love you Reena'){
+    if(answer === 'I love you'){
         printYes();
     } else{
         printNo();
@@ -92,7 +92,7 @@ const printNo = function print(){
     console.log("ha??");
 }
 
-quiz('I love you Reena', printYes, printNo);
+quiz('I love you', printYes, printNo);
 quiz('vewvds', printYes, printNo);
 
 //Arrow function
