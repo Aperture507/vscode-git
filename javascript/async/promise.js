@@ -40,5 +40,4 @@ fetchNumber
         })
     })
     .then(num => console.log(num));
-
-//Error handling
+    
